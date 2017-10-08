@@ -23,4 +23,7 @@ do
   fi
   #echo $name
   #cho $size
+  rm name.txt
+  rm usage.txt
+  rm usage1.txt
 done
