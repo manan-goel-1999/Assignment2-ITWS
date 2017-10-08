@@ -6,3 +6,4 @@ do
   a=`cat text.txt | head -n $i | tail -n 1`
   echo "$i) $a"
 done
+rm text.txt
