@@ -1,7 +1,5 @@
 #!/bin/bash
 #find *.sh > files.txt
-echo "Enter String"
-read string
 tot="0"
 count=$(echo $(find *.sh) | tr ' ' '\n'  | wc -l)
 #echo $count
