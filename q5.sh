@@ -1,0 +1,1 @@
+cat to_replace.txt | tr -s ' ' | tr ' ' '\n' | xargs -n 1 -i mv ./replace/{}.txt ./replace/{}{}.txt
