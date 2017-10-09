@@ -1,9 +1,10 @@
 #!/bin/bash
-awk NF $1 > text.txt
-count=`cat text.txt | wc -l`
+#awk NF $1 > text.txt
+count=`awk NF $1 | wc -l`
 for (( i = 1; i <= $count; i++ ))
 do
-  a=`cat text.txt | head -n $i | tail -n 1`
+  a=`awk NF $1 | head -n $i | tail -n 1`
   echo "$i) $a"
 done
-rm text.txt
+#rm text.txt
+
