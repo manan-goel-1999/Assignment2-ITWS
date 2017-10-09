@@ -9,7 +9,7 @@ for (( i = 1; i <= $count; i++ ))
 do
   file=$(echo $(find *.sh) | tr ' ' '\n' | head -n $i | tail -1)
  # echo $file
-  counter=$(grep -o "$string" $file | wc -l)
+  counter=$(grep -o "$1" $file | wc -l)
  # echo $counter
   if [[ $counter -gt "0" ]]
   then
